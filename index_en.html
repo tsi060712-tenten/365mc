@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(주)365mc</title>
+    <!-- 스와이퍼 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
+    <link rel="icon" sizes="any" href="favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+
+    <!-- css 파일 -->
+    <link rel="stylesheet" href="css/common2_en.css">
+    <link rel="stylesheet" href="css/index_en.css">
+    <link rel="stylesheet" href="css/header_en.css">
+    <link rel="stylesheet" href="css/responsive_en.css">
+
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/index_en.js"></script>
+    <script src="js/responsive.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="hd_gnb">
+                <div class="header_inner">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo-primary.svg" alt="로고"></a>
+                    </div>
+                    <nav class="gnb">
+                        <ul>
+                            <li>
+                                <a href="#">Company</a>
+                                <div class="menu_wrap">
+                                    <ul>
+                                        <li>
+                                            <a href="#">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="brandstory.html">Brand Story</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <a href="#">Business</a>
+                                <div class="menu_wrap">
+                                    <ul>
+                                        <li>
+                                            <a href="introduce.html">Medical Business</a>
+                                            <ul class="mini_menu">
+                                                <li>
+                                                    <a href="#">Liposuction</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">LAMS(Liposuction Injection)</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bio Business</a>
+                                            <ul class="mini_menu">
+                                                <li>
+                                                    <a href="#">Adipoes Stem Cell Center</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Adipoes Elasticity Boosting</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">R&D</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Clobal Business</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">PR</a>
+                                <div class="menu_wrap">
+                                    <ul>
+                                        <li>
+                                            <a href="#">News</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                   
+                    <div class="side">
+                        <a href="#">
+                            <div class="hd_btn">
+                                <div class="txt">Inquiry & Proposal</div>
+                            </div>
+                        </a>
+                        <div class="lang">
+                            <div class="txt">EN</div>
+                            <div class="toggle_btn">
+                                <img src="img/icon-select-arr.svg" alt="토글아이콘">
+                            </div>
+                            <div class="eng">
+                                <p><a href="index.html">KO</a></p>
+                                <p><a href="index_en.html">EN</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb_side">
+                        <img class="line" src="img/icon-menu.svg" alt="햄버거">
+                        <img class="x" src="img/icon-menu-close.svg" alt="닫기">
+                    </div>
+                </div>
+            </div>
+            <!-- 반응형 햄버거 시작 -->
+            <div class="hamburger">
+                <ul class="mb_main">
+                    <li>
+                        <div class="mb_gnb" id="company">
+                            <a href="#">Company</a>
+                            <div class="more">
+                                <img class="plus" src="img/icon-menu-plus.svg" alt="더보기">
+                                <img class="minus" src="img/icon-menu-minus.svg" alt="닫기">
+                            </div>
+                        </div>
+                        <ul class="mb_sub">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="brandstory.html">Brand Story</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="mb_gnb" id="business">
+                            <a href="#">Business</a>
+                            <div class="more">
+                                <img class="plus" src="img/icon-menu-plus.svg" alt="더보기">
+                                <img class="minus" src="img/icon-menu-minus.svg" alt="닫기">
+                            </div>
+                        </div>
+                        <ul class="mb_sub">
+                            <li>
+                                <a href="introduce.html">Medical Business</a>
+                                <ul class="mb_mini">
+                                    <li>Liposuction</li>
+                                    <li>LAMS(Liposuction Injection)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Bio Business</a>
+                                <ul class="mb_mini">
+                                    <li>Adipoes Stem Cell Center</li>
+                                    <li>Adipoes Elasticity Boosting</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">R&D</a>
+                            </li>
+                            <li>
+                                <a href="#">Clobal Business</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="mb_gnb" id="pr">
+                            <a href="#">PR</a>
+                            <div class="more">
+                                <img class="plus" src="img/icon-menu-plus.svg" alt="더보기">
+                                <img class="minus" src="img/icon-menu-minus.svg" alt="닫기">
+                            </div>
+                        </div>
+                        <ul class="mb_sub">
+                            <li>News</li>
+                            <!-- <ul class="mb_mini">
+                                <li>새소식</li>
+                                <li>언론보도</li>
+                                <li>사회공헌</li>
+                                <li>학술·연구</li>
+                                <li>수상내역</li>
+                            </ul> -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>    
+            <!-- 반응형 햄버거 끝 -->
+        </header>
+
+        <main>
+            <section class="sect1_company">
+            <video src="video/365mc-main1.mp4" muted autoplay loop placeinline></video>
+            <div class="sect1_inner">
+                <div class="content">
+                    <h1>
+                        <img src="img/logo-365mc.svg" alt="로고">, expands its proven<br class="h1_br1"> medical experience <br> into the industries of the future.
+                    </h1>
+                    <span>Based on millions of treatment data cases,<br> we are leading the creation of future value through growth <br> in the bio industry, global business, and healthcare solutions.</span>
+                    <div class="orange_btn">
+                        <a href="#" class="section01_btn">
+                            <span>Company</span>
+                            <div class="btn_icon"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="bg_wrap">
+                <section class="sect2_business">
+                    <div class="sect2_circle">
+                        <div class="circle_wrap">
+                            <div class="figure circle_1">
+                                <img src="img/sect2-figure1.png" alt="picture1">
+                            </div>
+                            <div class="figure circle_2">
+                                <img src="img/sect2-figure2.png" alt="picture2">
+                            </div>
+                            <div class="figure circle_3">
+                                <img src="img/sect2-figure3.png" alt="picture3">
+                            </div>
+                            <div class="figure circle_4">
+                                <img src="img/sect2-figure4.png" alt="picture4">
+                            </div>
+                            <div class="figure circle_5">
+                                <img src="img/sect2-figure5.png" alt="picture5">
+                            </div>
+                            <div class="figure circle_6">
+                                <img src="img/sect2-figure6.png" alt="picture6">
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="content">
+                        <h2>
+                            Where proven experience meets innovation, <br>
+                            a new path in medicine begins.
+                        </h2>
+                        <span>We present proven medical competitiveness <br> and an expandable global vision.</span>
+                        <div class="orange_btn">
+                            <a href="introduce.html" class="section01_btn">
+                                <span>Business</span>
+                                <div class="btn_icon"></div>
+                            </a>
+                        </div>
+                        
+                    </div>   
+                </section>
+                <section class="sect3_grow">
+                    <div class="sect3_inner">
+                        <div class="content">
+                            <h3>
+                                <div class="txt_box">
+                                    <p>Beyond customer-centered innovation,</p>
+                                </div>
+                                <div class="txt_box">
+                                    <p>we create sustainable growth</p>
+                                </div>
+                                <div class="txt_box">
+                                    <p>through global partnerships and strategic collaboration.</p>
+                                </div>
+                            </h3>
+                        </div>
+                        <div class="sponsor_slide">
+                            <div class="swiper sponsor">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="img/sect3-logo1.png" alt="sponsor logo1"></div>
+                                    <div class="swiper-slide"><img src="img/sect3-logo2.png" alt="sponsor logo2"></div>
+                                    <div class="swiper-slide"><img src="img/sect3-logo3.png" alt="sponsor logo3"></div>
+                                    <div class="swiper-slide"><img src="img/sect3-logo4.png" alt="sponsor logo4"></div>
+                                    <div class="swiper-slide"><img src="img/sect3-logo5.png" alt="sponsor logo5"></div>
+                                    <div class="swiper-slide"><img src="img/sect3-logo6.png" alt="sponsor logo6"></div>
+                                    <div class="swiper-slide"><img src="img/sect3-logo7.png" alt="sponsor logo7"></div>
+                                    <div class="swiper-slide"><img src="img/sect3-logo8.png" alt="sponsor logo8"></div>
+                                    <div class="swiper-slide"><img src="img/sect3-logo9.png" alt="sponsor logo9"></div>
+                                    <div class="swiper-slide"><img src="img/sect3-logo10.png" alt="sponsor logo10"></div>
+                                    <div class="swiper-slide"><img src="img/sect3-logo11.png" alt="sponsor logo11"></div>
+                                    <div class="swiper-slide"><img src="img/sect3-logo12.png" alt="sponsor logo12"></div>
+                                    
+                                </div>
+                            </div>
+    
+                            <script>
+                                var swiper = new Swiper ('.sponsor', {
+                                    autoplay : {
+                                        delay : 1,
+                                    },
+                                    loop : true,
+                                    slidesPerView : 'auto',
+                                    spaceBetween: 100,
+                                    speed : 4000,
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </section>
+                <section class="sect4_world">
+                    <div class="sect4_inner">
+                        <div class="content">
+                            <h2>
+                               We expand the achievements built in Korea<br> to the world.
+                            </h2>
+                            <span>Based on customer-centered innovation, <br> 365mc is creating new possibilities across medical, bio, <br> and global business fields.</span>
+                        </div>
+                        <div class="content_box">
+                            <ul class="function">
+                                <li style="transform: translate(-100px, 0px);">
+                                    <div class="icon">
+                                        <img src="img/sect4-list1.png" alt="medical business">
+                                    </div>
+                                    <div class="mc">
+                                        <div class="title">
+                                            <span>Medical Business</span>
+                                        </div>
+                                        <div class="detail">
+                                            <p>With 365mc’s experience of studying only obesity, we are expanding our global medical network.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="transform: translate(0px, -50px) scale(1.2, 1.2);">
+                                    <div class="icon">
+                                        <img src="img/sect4-list2.png" alt="bio business">
+                                    </div>
+                                    <div class="mc">
+                                        <div class="title">
+                                            <span>Bio Business</span>
+                                        </div>
+                                        <div class="detail">
+                                            <p>Based on 365mc’s medical data, we design the future of AI bio technology.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="transform: translate(100px, 0px);">
+                                    <div class="icon">
+                                        <img src="img/sect4-list3.png" alt="R&D">
+                                    </div>
+                                    <div class="mc">
+                                        <div class="title">
+                                            <span>R&D</span>
+                                        </div>
+                                        <div class="detail">
+                                            <p>Beyond medicine, we research new inspiration and experiences that embrace both content and technology.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="transform: translate(-100px, 0px);">
+                                    <div class="icon">
+                                        <img src="img/sect4-list4.png" alt="global business">
+                                    </div>
+                                    <div class="mc">
+                                        <div class="title">
+                                            <span>Global Business</span>
+                                        </div>
+                                        <div class="detail">
+                                            <p>By spreading our accumulated medical know-how around the world, we are expanding 365mc’s unique solutions.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="transform: translate(100px, 0px);">
+                                    <div class="icon">
+                                        <img src="img/sect4-list5.png" alt="partnership business">
+                                    </div>
+                                    <div class="mc">
+                                        <div class="title">
+                                            <span>Partnership Business</span>
+                                        </div>
+                                        <div class="detail">
+                                            <p>Through connections with diverse industries, we create a new form of healthcare.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="pin-wrapper">
+    
+                <section class="mc_tv">
+                    <div class="inner">
+                        <div class="content">
+                            <h2>365mc TV</h2>
+                            <div class="video_box">
+                                <div class="youtube">
+                                    <iframe width="720" height="440" src="https://www.youtube.com/embed/kXvSPCMif60?si=AfSmkH9ihzW-TPaE&placeinline=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="video_list">
+                                    <ul>
+                                        <!-- 1 -->
+                                        <li>
+                                            <a href="#">
+                                                <div class="s_video">
+                                                    <img src="img/01_en.jpg" alt="동영상1">
+                                                </div>
+                                                <p>Is Liposuction Painful? Q&A Common questions after Liposuction surgery!~</p>
+                                            </a>
+                                        </li>
+                                        <!-- 2 -->
+                                        <li>
+                                            <a href="#">
+                                                <div class="s_video">
+                                                    <img src="img/02_en.jpg" alt="동영상2">
+                                                </div>
+                                                <p>ALL ABOUT LAMS!<br>?</p>
+                                            </a>
+                                        </li>
+                                        <!-- 3 -->
+                                        <li>
+                                            <a href="#">
+                                                <div class="s_video">
+                                                    <img src="img/03_en.jpg" alt="동영상3">
+                                                </div>
+                                                <p>LAMS or <br> Liposuction? - let’s find your perfect match!</p>
+                                            </a>
+                                        </li>
+                                        <!-- 4 -->
+                                        <li>
+                                            <a href="#">
+                                                <div class="s_video">
+                                                    <img src="img/04_en.jpg" alt="동영상4">
+                                                </div>
+                                                <p>Get to know Saggy Skin: Let's explore the causes and solutions!</p>
+                                            </a>
+                                        </li>
+                                        <!-- 5 -->
+                                        <li>
+                                            <a href="#">
+                                                <div class="s_video">
+                                                    <img src="img/05_en.jpg" alt="동영상5">
+                                                </div>
+                                                <p>Is LAMS Different from Liposuction? A Complete Overview #liposuctionkorea #lipo360bbl</p>
+                                            </a>
+                                        </li>
+                                        <!-- 6 -->
+                                        <li>
+                                            <a href="#">
+                                                <div class="s_video">
+                                                    <img src="img/06_en.jpg" alt="동영상6">
+                                                </div>
+                                                <p>Liposuction satisfaction rate is 99,9%???!!</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#" class="mc_tv_btn">
+                                <span>View All</span>
+                                <div class="btn_icon"></div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="percent">
+                <div class="inner">
+                    <!-- 왼쪽 블록 -->
+                    <div class="content_01">
+                        <h2>Customer Satisfaction Rate</h2>
+                        <div class="content_txt">
+                            <b>99.9<i>%</i></b>
+                            <img src="img/sect6-arr.png" alt="화살표">
+                        </div>
+                        <p>Record-High Satisfaction Rate<br> in Liposuction</p>
+                    </div>
+                    <!-- 오른쪽 블록 -->
+                    <div class="content_02">
+                        <!-- 첫 번째 블록 -->
+                        <div class="content_inner1">
+                            <a href="#">
+                                <span>Liposuction</span>
+                                <!-- 바로가기 아이콘 -->
+                                <div class="arr_icon1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <span>LAMS</span>
+                                <!-- 바로가기 아이콘 -->
+                                <div class="arr_icon1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <!-- 두 번째 블록 -->
+                        <div class="content_inner2">
+                            <div class="inner2_box01">
+                                <h2>Bio Business</h2>
+                                <a href="#">
+                                    Fat Stem Cell Center
+                                    <div class="arr_icon2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                                </div>
+                                </a>
+                                <a href="#">
+                                    Fat Elasticity Boosting
+                                    <div class="arr_icon2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="inner2_box02">
+                                <img src="img/sect6-img4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="video_sect">
+                <div class="inner">
+                    <img src="img/sect7-logo.png" alt="로고" class="logo">
+                    <img src="img/sect7-cont-en.png" alt="배경이미지" class="bg_img">
+                    <div class="video_box"><video src="video/365mc-main2.mp4" placeinline loop autoplay muted></video></div>
+                </div>
+            </section>
+        </main>
+
+        <div class="gotop_btn">
+                <img src="img/icon-top.svg" alt="고탑버튼">
+        </div>
+        <footer>
+            <div class="inner">
+                <div class="left_box">
+                    <img src="img/ft-tel.png" alt="전화번호">
+                    <div class="txt_box">
+                        <p>365mc Co., Ltd. ㅣ CEO: Nam-Cheol Kim</p>
+                        <p>4F, 7 Seocho-daero 52-gil, Seocho-gu, Seoul, Republic of Korea (Jeil Building) <span class="f_txt">ㅣ</span><span>Business Registration No.: 120-87-04354</span></p>
+                        <p>COPYRIGHT(C) 2025 365mc. ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div>
+
+                <div class="right_box">
+                    <ul class="btn_list">
+                        <!-- 1 -->
+                        <li>
+                            <a href="#">365mc</a>
+                        </li>
+                        <!-- 2 -->
+                        <li>
+                            <a href="#">Seoul 365mc Hospital</a>
+                        </li>
+                        <!-- 3 -->
+                        <li>
+                            <a href="#">Seoul 365mc LAMS Hospital</a>
+                        </li>
+                        <!-- 4 -->
+                        <li>
+                            <a href="#">Busan 365mc Hospital (Seomyeon)</a>
+                        </li>
+                        <!-- 5 -->
+                        <li>
+                            <a href="#">Global 365mc Daejeon Hospital</a>
+                        </li>
+                        <!-- 6 -->
+                        <li>
+                            <a href="#">Global 365mc Incheon Hospital</a>
+                        </li>
+                        <!-- 7 -->
+                        <li>
+                            <a href="#">Daegu 365mc Hospital</a>
+                        </li>
+                        <!-- 8 -->
+                        <li>
+                            <a href="#">Haeundae LAMS Special Center</a>
+                        </li>
+                        <!-- 9 -->
+                        <li>
+                            <a href="#">365mc Co., Ltd.</a>
+                        </li>
+                        <!-- 10 -->
+                        <li>
+                            <a href="#">PangPang Clinic</a>
+                        </li>
+                        <!-- 11 -->
+                        <li>
+                            <a href="#">Adipose Stem Cell Center</a>
+                        </li>
+                    </ul>
+                    <div class="btn">
+                        Family Sites
+                        <img src="img/icon-familysite-arr.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- 인트로 영상 -->
+    <div class="intro">
+        <div class="fullvideo">
+            <video src="video/365mc-main_en.mp4" muted playinline autoplay loop placeinline></video>
+            <div class="main_btn">
+                <div class="sound">
+                    <img src="img/btn-sound-mute.svg" alt="음소거버튼">
+                </div>
+                <div class="close">
+                    <img src="img/btn-video-close.svg" alt="닫기버튼">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 인트로영상 끝 -->
+    </div>
+</body>
+
+<script>
+ // use a script tag or an external JS file
+ document.addEventListener("DOMContentLoaded", (event) => {
+  // gsap code here!
+ });
+
+</script>
+</html>

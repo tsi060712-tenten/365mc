@@ -1,0 +1,881 @@
+@charset "utf-8";
+/* main */
+
+/* main .rap {} */
+body {
+    height: auto !important;
+    overflow: auto;
+}
+
+/* 바디에 높이 잡히는거 없애줌 */
+.intro .inner {
+    height: 100vh;
+    position: relative;
+
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.intro .content {
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    position: relative; */
+}
+
+.intro .content div {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1%;
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 210px;
+    color: rgb(255, 105, 24);
+    font-family: 'Outfit';
+    text-align: center;
+    transform: translate(0, 0) scale(1);
+    padding-top: 20%;
+    position: sticky;
+    top: 30px;
+    left: 50px;
+}
+
+/* 부모와 자식의 높이가 같음 (height: 100%).intro .content와 그 안의 div 모두 height: 100%로 설정되어 있습니다.sticky 요소는 부모 요소의 범위 안에서만 스크롤을 따라 움직입니다. 하지만 현재 구조는 부모와 자식의 높이가 똑같기 때문에, 자식이 부모 안에서 움직일 수 있는 공간(여백)이 전혀 없습니다.부모 요소의 display: flex 영향부모가 display: flex이면 자식 요소는 기본적으로 부모의 높이만큼 꽉 차게 늘어납니다(align-items: stretch). 이 또한 자식이 움직일 공간을 없애는 원인이 됩니다 */
+#subpage {
+    max-width: 100%;
+}
+
+.nbsp {
+    width: 3%;
+}
+
+.intro .content div img {
+    display: block;
+    width: 100%;
+}
+
+.intro .content div .o img {
+    margin-top: 15%;
+}
+
+.intro .content div .r2 img {
+    margin-left: 5%;
+    margin-top: 15%;
+}
+
+.intro .content div .y img {
+    margin-top: 65%;
+}
+
+/* main .intro .content div span {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraBold.woff2') format('woff2');
+    font-weight: 600;
+} */
+.intro .content div img {
+    display: block;
+}
+
+.intro .contentresponsiv div {
+    display: none;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1%;
+    font-size: 15rem;
+    font-weight: 600;
+    line-height: 210px;
+    color: rgb(255, 105, 24);
+    font-family: 'Outfit';
+    text-align: center;
+    transform: translate(0, 0) scale(1);
+
+
+}
+
+.intro .contentresponsiv div img {
+    display: none;
+    width: 100%;
+}
+
+.intro .contentresponsiv div .o img {
+    margin-top: 50%;
+    display: none;
+}
+
+.intro .contentresponsiv .r2 img {
+    margin-left: 5%;
+    display: none;
+}
+
+.intro .contentresponsiv .y img {
+    margin-top: 55%;
+    display: none;
+}
+
+
+/*.......... introcoment.......... */
+main .introcoment {
+    overflow: hidden;
+    padding: 10% 0 0 0;
+}
+
+main .introcoment .inner {
+    height: 70vh;
+}
+
+main .introcoment .content {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+main .introcoment .content .video {
+    max-width: 1180px;
+    /* height: 70vh; */
+
+    border: none;
+}
+
+main .introcoment .content .video video {
+    /* height: 73vh; */
+    width: 100%;
+    margin-top: -5%;
+}
+
+.mentbox {
+    width: 30%;
+    height: 70vh;
+    position: absolute;
+    left: 59%;
+    top: -4%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10%; */
+
+}
+
+main .introcoment .inner .mentbox .one {
+    display: block;
+    width: 410px;
+    height: 280px;
+    background-color: rgb(231, 228, 228);
+    border-radius: 30px;
+    margin-bottom: 13%;
+    position: relative;
+}
+
+main .introcoment .inner .mentbox .one::before {
+    content: "";
+    position: absolute;
+    left: -12%;
+    top: 3.3rem;
+
+    width: 20%;
+    height: 43.5px;
+    background-image: url(../img/brand-sect1-tail.png);
+    /* border-top: 2rem solid transparent;
+    border-bottom: 2rem solid transparent;
+    border-right: 3rem solid rgb(231, 228, 228); */
+}
+
+main .introcoment .inner .mentbox .two {
+    display: block;
+    width: 410px;
+    height: 170px;
+    background-color: rgb(231, 228, 228);
+    border-radius: 30px;
+    position: relative;
+}
+
+main .introcoment .inner .mentbox .two::before {
+    content: "";
+    position: absolute;
+    left: -12%;
+    top: 3rem;
+
+    width: 75.5px;
+    height: 43.5px;
+    background-image: url(../img/brand-sect1-tail.png);
+    /* border-top: 2rem solid transparent;
+    border-bottom: 2rem solid transparent;
+    border-right: 3rem solid rgb(231, 228, 228); */
+}
+
+.mission {
+    font-family: "Outfit", sans-serif;
+    color: rgb(255, 105, 24);
+    text-align: center;
+    line-height: 1.4;
+    font-weight: 500;
+    font-size: 2.5rem;
+    position: absolute;
+    left: 50%;
+    top: 18%;
+    transform: translate(-50%);
+    white-space: nowrap;
+}
+
+.mentone {
+    width: 100%;
+    text-align: center;
+    font-family: 'Suit';
+    font-weight: 600;
+    line-height: 1.4;
+    font-size: 3.2rem;
+    position: absolute;
+    left: 50%;
+    top: 32%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.value {
+    font-family: "Outfit", sans-serif;
+    color: rgb(255, 105, 24);
+    text-align: center;
+    line-height: 1.4;
+    font-weight: 500;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    white-space: nowrap;
+}
+
+.menttwo {
+    width: 100%;
+    text-align: center;
+    font-family: 'Suit';
+    font-weight: 600;
+    line-height: 1.4;
+    font-size: 3.2rem;
+    position: absolute;
+    top: 45%;
+    white-space: nowrap;
+}
+
+/* ........video........ */
+main .video {
+    width: 100%;
+    /* height: 100vh; */
+    margin-top: -1.5%;
+    position: relative;
+}
+
+main .video .inner {
+    width: 100%;
+    /* height: 100vh; */
+}
+
+main .video .inner video {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* ........slogan........ */
+main .slogan {
+
+    background-color: #e7e4e4;
+}
+
+main .slogan .inner {
+
+
+    padding: 8% 19.5%;
+
+}
+
+main .slogan .inner .content {
+    margin: 0 auto;
+}
+
+.slogancoment {
+    display: flex;
+    margin-top: 5%;
+    gap: 8%;
+    width: 100%;
+}
+
+main .slogan .inner>h2 {
+    font-size: 3rem;
+    color: rgb(255, 105, 24);
+    font-family: "Outfit", sans-serif;
+    font-weight: 550;
+}
+
+.slogan_txt {
+    display: block;
+    width: 65%;
+    height: 63%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 6% 6%;
+}
+
+.slogan_txt img {
+    display: block;
+    margin: 0 auto;
+}
+
+.slogan_txt #ment .none {
+    display: block;
+}
+
+.slogan_txt #ment .no {
+    display: none;
+}
+
+.slogan_txt #ment {
+    width: 100%;
+    font-family: 'Suit';
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.8;
+    margin: 0 auto;
+    /* white-space: nowrap; */
+    margin-top: 8%;
+    margin-left: 4%;
+
+}
+
+.slogan2_txt {
+    width: 60%;
+    height: 50%;
+}
+
+.slogan2_txt .title {
+    color: rgb(255, 105, 24);
+    font-family: 'Suit';
+    font-size: 3.2rem;
+    font-weight: 650;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+.subcoment {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    white-space: nowrap;
+}
+
+.subcoment1 {
+    display: flex;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: "Outfit", sans-serif;
+
+}
+
+.subcoment1inner {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.subcoment1 .orange {
+    color: rgb(255, 105, 24);
+    font-weight: 500;
+}
+
+.convenient {
+    display: flex;
+    line-height: 2;
+}
+
+.comfortable {
+    display: flex;
+    line-height: 2;
+}
+
+.chain {
+    display: flex;
+    line-height: 2;
+}
+
+.change {
+    display: flex;
+    line-height: 2;
+}
+
+.subcoment2 {
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: 'Suit';
+    line-height: 2;
+    font-weight: 400;
+    margin-left: 15%;
+
+}
+
+
+.responsivesub {
+    display: flex;
+    flex-direction: column;
+    gap: 30%;
+    display: none;
+}
+
+.responsivesub .subcoment1-1 {
+    margin-left: -30%;
+    display: flex;
+    gap: 20%;
+}
+
+.responsivesub .subcoment1-1 .orange {
+    color: rgb(255, 105, 24);
+    font-weight: 500;
+}
+
+.responsivesub .subcoment1-1 .convenient {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.6rem;
+    white-space: nowrap;
+
+}
+
+.responsivesub .subcoment1-1 .comfortable {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.6rem;
+    white-space: nowrap;
+    display: flex;
+}
+
+.responsivesub .subcoment1-2 {
+    display: flex;
+    gap: 20%;
+}
+
+.responsivesub .subcoment1-2 .orange {
+    color: rgb(255, 105, 24);
+    font-weight: 500;
+}
+
+.responsivesub .subcoment1-2 .chain {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.6rem;
+    white-space: nowrap;
+}
+
+.responsivesub .subcoment1-2 .change {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.6rem;
+    white-space: nowrap;
+}
+
+.responsivesub2 {
+    margin-left: -50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30%;
+    display: none;
+}
+
+.responsivesub2 .subcoment1-1 {
+    margin-left: -30%;
+    display: flex;
+    gap: 20%;
+    font-size: 16px;
+    font-family: 'Suit';
+}
+
+.responsivesub2 .subcoment1-2 {
+    margin-left: -30%;
+    display: flex;
+    gap: 20%;
+    font-size: 16px;
+    font-family: 'Suit';
+}
+
+
+
+
+.slogancoment .btn {
+    display: flex;
+    margin-left: -12%;
+    margin-top: 13%;
+}
+
+.slogan_btn {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    padding: 8px 8px 8px 32px;
+    width: 191.19px;
+    height: 65px;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-color: #27272a;
+    /* transition: all 0.2s; */
+    /* margin-top: 5%; */
+    border: 1px solid transparent;
+    margin-left: 60px;
+
+}
+
+.slogan_btn:hover {
+    border: 1px solid rgb(255, 105, 24);
+
+
+
+}
+
+.slogan_btn span {
+
+    line-height: 50px;
+    font-size: 1.6rem;
+    color: white;
+    /* font-family: 'Suit'; */
+    font-weight: 500;
+
+}
+
+.slogan_btn .btn_icon {
+    width: 47px;
+    height: 47px;
+    background-color: #3f3f46;
+    border-radius: 50px;
+    margin: auto 0;
+    position: relative;
+}
+
+.slogan_btn .btn_icon img {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+/* .slogan_btn .btn_icon::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(../images/btn-arr-thin.svg) no-repeat center/cover;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+
+} */
+.slogan_btn2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px 8px 8px 32px;
+    width: 209.78px;
+    border: 1px solid transparent;
+    height: 65px;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-color: #ffffff;
+    /* transition: all 0.2s; */
+    /* margin-left: -9%;
+    margin-top: 4.5%; */
+    margin-left: -50px;
+}
+
+.slogan_btn2:hover {
+    border: 1px solid rgb(255, 105, 24);
+
+}
+
+.slogan_btn2 span {
+    width: 100px;
+    line-height: 50px;
+    font-size: 1.6rem;
+    color: #27272a;
+    /* font-family: 'Suit'; */
+    font-weight: 500;
+}
+
+.slogan_btn2 .btn_icon2 {
+    width: 47px;
+    height: 47px;
+    background-color: #3f3f46;
+    border-radius: 50px;
+    margin: auto 0;
+    position: relative;
+}
+
+.slogan_btn2 .btn_icon2 img {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+/* .slogan_btn .btn2_icon::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(../images/btn-arr-thin.svg) no-repeat center/cover;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+
+} */
+/* ........orange_txt........ */
+.orange_txt {
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(96deg, #FF6918 0%, #FF4602 100%);
+    position: relative;
+}
+
+.orange_txt .inner {
+    width: 100%;
+    height: 27vh;
+
+}
+
+.orange_txt .inner .content1 {
+    color: white;
+    font-size: 2.4rem;
+    font-family: 'Suit';
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5;
+    white-space: nowrap;
+    position: relative;
+    top: 34%;
+}
+
+.orange_txt .inner .content1 .res_two {
+    display: none;
+}
+
+.orange_txt .inner .content2 {
+    width: 100%;
+    color: white;
+    font-size: 2.4rem;
+    font-family: 'Suit';
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.4;
+    position: relative;
+    top: 35%;
+    margin-left: -70%;
+}
+
+.orange_txt .inner .content2 .none {
+    display: block;
+}
+
+.orange_txt .inner .content2 .none1 {
+    display: none;
+}
+
+/* ........character........ */
+.character {
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.character .inner {
+    width: 100%;
+    /* height: 100vh; */
+    padding: 8% 19.5% 9.4% 19.5%;
+    position: relative;
+}
+
+.character .content1 {
+    position: relative;
+    width: 100%;
+}
+
+.character .content1 h2 {
+    font-size: 2.8rem;
+    color: rgb(255, 105, 24);
+    font-family: "Outfit", sans-serif;
+    font-weight: 550;
+}
+
+.character .inner .content1 video {
+    /* position: absolute; */
+    border: none;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content2 {
+    /* width: 100%; */
+    font-size: 3.2rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 550;
+    position: absolute;
+    top: 20%;
+    left: 70%;
+}
+
+/* .content2 .a {
+    margin-top: ;
+}
+.content2 .b {
+    margin-bottom: 100%;
+} */
+
+.content3 {
+    width: 100%;
+    font-family: 'Suit';
+    font-size: 2.4rem;
+    text-align: center;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+.content3 p .none {
+    display: none;
+}
+
+.content3 p .none2 {
+    display: none;
+}
+
+
+/* footer */
+/* =============== _btn =============== */
+.gotop_btn {
+    width: 56px;
+    height: 56px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    margin-top: 5px;
+    align-items: end;
+    border: 1px solid hsla(0, 0%, 100%, .5);
+    border-radius: 50px;
+    cursor: pointer;
+    float: right;
+    z-index: 20;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .2);
+    z-index: 999;
+}
+
+.wrap .gotop_btn img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* =============== footer =============== */
+footer {
+    width: 100%;
+    height: 323.56px;
+    background: url(../img/ft-bg_v2.jpg) no-repeat 0 0/cover;
+    position: relative;
+    padding: 80px 90px 80px 60px;
+}
+
+footer .inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* left_box */
+footer .inner {
+    position: relative;
+}
+
+footer .inner .left_box {
+    width: auto;
+    height: 100%;
+
+}
+
+footer .inner .left_box img {
+    display: block;
+    width: 237px;
+    height: 48px;
+    margin-bottom: 42px;
+}
+
+footer .inner .left_box p {
+    font-size: 1.4rem;
+    color: #e4e4e7;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+/* right_box */
+footer .inner .right_box {
+    width: auto;
+    height: 100%;
+    /* position: absolute;
+    right: -1.7%; */
+}
+
+/* 푸터 버튼 누르면 나오는 박스 */
+footer .inner .right_box .btn_list {
+    position: absolute;
+    bottom: 60%;
+    width: 360px;
+    /* height: 475px; */
+    padding: 6px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    display: none;
+}
+
+footer .inner .right_box .btn_list.on {
+    display: block;
+}
+
+footer .inner .right_box .btn_list li {
+    padding: 11px 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* 호버하면 바뀌는 색 */
+footer .inner .right_box .btn_list li:hover {
+    color: #FF6918;
+}
+
+footer .inner .right_box .btn_list li:nth-child(n+2) {
+    border-top: 1px solid #c4c4c4;
+}
+
+
+/* 푸터 버튼 */
+footer .inner .right_box .btn {
+    display: block;
+    width: 360px;
+    height: 60px;
+    padding: 0 30px;
+    background-color: #000;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 21%;
+    cursor: pointer;
+}
+
+footer .inner .right_box .btn.on {
+    background-color: #FF6918;
+}
+
+footer .inner .right_box .btn img {
+    display: block;
+    width: 18px;
+    height: 18px;
+}
+
+footer .inner .right_box .btn img.on {
+    transform: rotate(180deg);
+}

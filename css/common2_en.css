@@ -1,0 +1,296 @@
+@charset "utf-8"; 
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Heavy.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html, body {
+    font-size: 10px;
+    line-height: 1.4;
+    font-family: 'Suit';
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+
+/* 햄버거 메뉴 시작*/
+.hamburger {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: -1;
+    transform: translateY(-12px);
+    transition: opacity .35s ease, transform .35s ease, visibility .35s;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+body.menu_open {
+    overflow: hidden !important;
+}
+
+
+.hamburger::-webkit-scrollbar {
+    display: none;
+}
+
+.hamburger.on {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    z-index: 0;
+    transform: translateY(0);
+}
+
+.mb_main {
+    position: relative;
+    top: auto;
+    width: 100%;
+    border-top: 1px solid #eee;
+}
+
+.mb_main > li .mb_gnb {
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    font-size: 2.4rem;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.mb_main > li #company.on,
+.mb_main > li #business.on,
+.mb_main > li #pr.on {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity .3s ease, transform .3s ease;
+}
+
+.mb_gnb:hover {
+    color: #ff6918;
+}
+
+.mb_main img {
+    width: 12px;
+    height: 12px;
+}
+
+.mb_sub {
+    display: none;
+    width: 100%;
+    font-weight: 700;
+}
+
+.mb_sub > li {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #dbdbdb;
+    font-size: 1.8rem;
+}
+
+.mb_mini {
+    width: 100%;
+    padding: 20px 0 0 12px;
+    font-size: 1.6rem;
+    color: #929292;
+    font-weight: 500;
+}
+
+.mb_mini > li {
+    cursor: pointer;
+}
+
+.mb_mini > li + li {
+    margin-top: 12px;
+}
+
+.more {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    flex: 0 0 12px;
+}
+
+.more img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.more .plus { display: block; }
+.more .minus { display: none; }
+.more .minus.on { display: block; }
+.more .plus.on { display: none; }
+
+/* 햄버거 메뉴 끝 */
+
+
+@media screen and (max-width: 991.98px) {
+    .wrap {
+        width: 100%;
+        overflow-x: clip;
+    }
+    main {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+    .bg_wrap {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+    .sect3_grow,
+    .sect4_world {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* =============== footer =============== */
+    footer {
+        width: 100%;
+        min-height: 323px;
+        background: url(../img/ft-bg_v2.jpg) no-repeat 50% 0/cover;
+        position: relative;
+        padding: 80px 90px 80px 60px;
+        z-index: 2;
+    }
+
+    /* left_box */
+    footer .inner .left_box {
+        width: 60%;
+        height: 100%;
+    }
+
+    /* right_box */
+    footer .inner .right_box .btn {
+        width: 285.75px;
+        margin-top: 26%;
+    }
+
+    footer .inner .right_box .btn_list {
+        width: 285.75px;
+        padding: 3px 0;
+        bottom: 65%;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .wrap {
+        width: 100%;
+        overflow-x: clip;
+    }
+    main {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+    .bg_wrap {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+    .sect3_grow,
+    .sect4_world {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .wrap .gotop_btn {
+        width: 48px;
+        height: 48px;
+        bottom: 30px;
+        right: 20px;
+    }
+
+    .wrap .gotop_btn img {
+        width: 100%;
+    }
+}
